@@ -1,0 +1,14 @@
+D:\שירה צביה\עבודה\פרויקטים\VeriSoft\bin\Debug\net7.0\VeriSoft.exe
+D:\שירה צביה\עבודה\פרויקטים\VeriSoft\bin\Debug\net7.0\VeriSoft.deps.json
+D:\שירה צביה\עבודה\פרויקטים\VeriSoft\bin\Debug\net7.0\VeriSoft.runtimeconfig.json
+D:\שירה צביה\עבודה\פרויקטים\VeriSoft\bin\Debug\net7.0\VeriSoft.dll
+D:\שירה צביה\עבודה\פרויקטים\VeriSoft\bin\Debug\net7.0\VeriSoft.pdb
+D:\שירה צביה\עבודה\פרויקטים\VeriSoft\obj\Debug\net7.0\VeriSoft.GeneratedMSBuildEditorConfig.editorconfig
+D:\שירה צביה\עבודה\פרויקטים\VeriSoft\obj\Debug\net7.0\VeriSoft.AssemblyInfoInputs.cache
+D:\שירה צביה\עבודה\פרויקטים\VeriSoft\obj\Debug\net7.0\VeriSoft.AssemblyInfo.cs
+D:\שירה צביה\עבודה\פרויקטים\VeriSoft\obj\Debug\net7.0\VeriSoft.csproj.CoreCompileInputs.cache
+D:\שירה צביה\עבודה\פרויקטים\VeriSoft\obj\Debug\net7.0\VeriSoft.dll
+D:\שירה צביה\עבודה\פרויקטים\VeriSoft\obj\Debug\net7.0\refint\VeriSoft.dll
+D:\שירה צביה\עבודה\פרויקטים\VeriSoft\obj\Debug\net7.0\VeriSoft.pdb
+D:\שירה צביה\עבודה\פרויקטים\VeriSoft\obj\Debug\net7.0\VeriSoft.genruntimeconfig.cache
+D:\שירה צביה\עבודה\פרויקטים\VeriSoft\obj\Debug\net7.0\ref\VeriSoft.dll
