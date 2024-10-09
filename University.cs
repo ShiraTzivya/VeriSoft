@@ -49,9 +49,7 @@ Console.WriteLine(s1.study());
 p1.addCourseTeach(uc1.CourseName);
 p1.addCourseTeach(uc2.CourseName);
 Console.WriteLine(p1.teach());
-
-Console.WriteLine("7777777777");
-Console.WriteLine(uc1.getParticipants);
+Console.WriteLine(uc1.getParticipants());
 
 
 

@@ -39,22 +39,20 @@ namespace VeriSoft
         #endregion
 
         #region Methods
-        public virtual string getCourseName() {  return courseName; }//אין צורך
-        public virtual string getCourseCode() {  return courseCode; }//אין צורך
         public virtual void  addParticipant(Person person) 
         {
             {
                 if (person is Student student)
                 {
                     participants.Add(student);
-                    student.addCourse(getCourseName());
+                    student.addCourse(courseName);
                 }
             ;
             }
         }
-        public virtual List<string> getParticipants() 
+        public virtual string getParticipants() 
         {
-            return participants.Select(p => p.Name).ToList(); ;
+            return string.Join(", ", participants.Select(p => p.Name));
         }
         #endregion
 
