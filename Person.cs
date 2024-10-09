@@ -8,7 +8,7 @@ namespace VeriSoft
 {
     internal abstract class Person
     {
-        #region Field
+        #region Attributes
         private string name;
         private int age;
         protected string address;
