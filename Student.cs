@@ -19,6 +19,10 @@ namespace VeriSoft
         {
             get { return studentId; }
         }
+        public void addCourse(string curse)
+        {
+            courses.Add(curse);
+        }
         #endregion
 
         #region Methods
