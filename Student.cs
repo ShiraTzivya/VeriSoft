@@ -10,6 +10,15 @@ namespace VeriSoft
     {
         #region Attributes
         private string studentId;
+        private static int count = 0;
+        private List<string> courses = new List<string>();
+        #endregion
+
+        #region Properties
+        public string StudentId
+        {
+            get { return studentId; }
+        }
         #endregion
 
         #region Methods
@@ -17,9 +26,17 @@ namespace VeriSoft
         {
             return "Student";
         }
-        public string study()// returns a String describing the study activity
+        public string study()
         {
-            return default(string);
+            return String.Join(", ", courses);
+        }
+        #endregion
+
+        #region Ctor
+        public Student(string name, int birthYear, string address): base(name, birthYear, address)
+        {
+            count++;
+            studentId = count.ToString(); 
         }
         #endregion
     }
