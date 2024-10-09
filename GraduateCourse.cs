@@ -31,7 +31,7 @@ namespace VeriSoft
         public override string getCourseName() { return base.getCourseName()+ researchFocus; }
         public override string getCourseCode() { return base.getCourseCode()+"*"; }
         public override void addParticipant(Person person) { base.addParticipant(person); }
-        public override List<Person> getParticipants() { return base.getParticipants(); }
+        public override List<string> getParticipants() { return base.getParticipants(); }
         #endregion
 
         #region Ctor

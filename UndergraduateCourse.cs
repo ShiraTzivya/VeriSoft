@@ -13,7 +13,7 @@ namespace VeriSoft
         private string courseName;
         private string courseCode;
         private static int count = 0;
-        private List<Person> participants { get; }
+        private List<Person> participants = new List<Person>();
         
         #endregion
 
@@ -46,15 +46,15 @@ namespace VeriSoft
             {
                 if (person is Student student)
                 {
-                    Participants.Add(student);
+                    participants.Add(student);
                     student.addCourse(getCourseName());
                 }
             ;
             }
         }
-        public virtual List<Person> getParticipants() //אין צורך
+        public virtual List<string> getParticipants() 
         {
-            return Participants;
+            return participants.Select(p => p.Name).ToList(); ;
         }
         #endregion
 

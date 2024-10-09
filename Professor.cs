@@ -59,13 +59,17 @@ namespace VeriSoft
         {
             return String.Join(", ", coursesTeach);// returns a String describing the teaching activity
         }
+        public void addCourseTeach(string courseTeach)
+        {
+            coursesTeach.Add(courseTeach);
+        }
         #endregion
 
         #region Ctor
         public Professor(string name, int birthYear, string address,string department) : base(name, birthYear, address)
         {
             Department=department;
-                    }
+        }
         #endregion
     }
 }

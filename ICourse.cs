@@ -16,9 +16,8 @@ namespace VeriSoft
         public string getCourseName() ; //returns the name of the course
         public string getCourseCode();//returns the course code
         public void addParticipant(Person person);//adds a person to the course
-        public List<Person> getParticipants();//returns a list of participants in the course
-                                              //אין צורך משום שכבר קיים במאפיינים למעלה
-
+        public List<string> getParticipants();//returns a list of participants in the course
+                                             
         #endregion
     }
 }
