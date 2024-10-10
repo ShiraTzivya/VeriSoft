@@ -10,8 +10,8 @@ namespace VeriSoft
     {
         #region Attributes
         private string studentId;
-        private static int count = 0;
-        private List<string> courses = new List<string>();
+        private static int count = 0;//משתנה סטטי המונה את התלמידים ליצירת studentId  
+        private List<string> courses = new List<string>();//רשימת הקורסים שהוא לומד
         #endregion
 
         #region Properties
@@ -33,7 +33,7 @@ namespace VeriSoft
         }
         public string study()
         {
-            return String.Join(", ", courses);
+            return String.Join(", ", courses);//יצירת מחרוזת של כל הקורסים
         }
         #endregion
 
