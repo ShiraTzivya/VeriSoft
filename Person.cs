@@ -11,10 +11,7 @@ namespace VeriSoft
     {
         #region Attributes
         private string name;
-        private int birthYear;
-        //private int age;
-        //אין צורך בגיל כאשר מכניסים שנת לידה 
-        //ההכנסה של שנת לידה עדיפה כי אז הגיל מתעדכן 
+        private int birthYear;//בשביל לדעת מה הגיל תמיד
         protected string address;
         #endregion
 
@@ -23,9 +20,17 @@ namespace VeriSoft
         {
             get { return name; }
             set {
-                if (string.IsNullOrWhiteSpace(value))
+                if (string.IsNullOrWhiteSpace(value))//בדיקה שהשם לא ריק ולא רק רווחים
                 {
                     throw new ArgumentException("Name cannot be empty or whitespace.");
+                }
+                if (!Regex.IsMatch(value, @"^[a-zA-Zא-ת\s]+$"))//בדיקה שהשם מכיל רק אותיות ורווחים
+                {
+                    throw new ArgumentException("Department name can only contain letters and spaces.");
+                }
+                if (value.Length < 2)//בדיקה שאורך השם גדול מ-2
+                {
+                    throw new ArgumentException("Department name must be at least 2 characters long.");
                 }
                 name = value;
             }
@@ -35,7 +40,7 @@ namespace VeriSoft
             set
             {
                 int currentYear = DateTime.Now.Year;
-                // בדיקת אם שנת הלידה היא סבירה
+                // בדיקה שהשנת הלידה הגיונית
                 if (value < 1900 || value > currentYear - 1)
                 {
                     throw new ArgumentException("Birth year must be between 1900 and the current year.");
@@ -48,7 +53,7 @@ namespace VeriSoft
             get { return address; }
             set
             {
-                // בדיקת ריק
+                // בדיקה שהכתובת לא ריקה ולא מכחיה רק רווחים
                 if (string.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException("Address cannot be empty or whitespace.");
@@ -60,8 +65,8 @@ namespace VeriSoft
                     throw new ArgumentException("Address must be at least 5 characters long.");
                 }
 
-                // בדיקת תווים חוקיים (אפשר להתאים את הביטוי הרגולרי לפי הצורך)
-                string pattern = @"^[a-zA-Z0-9\s,.]+$"; // דוגמה לתבנית חוקית
+                // בדיקה לתווים הגיוניים בכתובת
+                string pattern = @"^[a-zA-Z0-9\s,.]+$"; 
                 if (!Regex.IsMatch(value, pattern))
                 {
                     throw new ArgumentException("Address contains invalid characters.");

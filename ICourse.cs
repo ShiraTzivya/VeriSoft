@@ -13,8 +13,6 @@ namespace VeriSoft
         #endregion
 
         #region Methods
-        public string getCourseName() ; //returns the name of the course
-        public string getCourseCode();//returns the course code
         public void addParticipant(Person person);//adds a person to the course
         public string getParticipants();//returns a list of participants in the course
                                              
